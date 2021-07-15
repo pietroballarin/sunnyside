@@ -1,0 +1,16 @@
+body {
+    max-width: 1920px;
+}
+
+h1 {
+    text-align: center;
+}
+
+header {
+    min-width: 220px;
+    max-width: 1920px;
+    height: 1080px;
+    background-image:url("../images/image-header.jpg");
+    background-position: center;
+    background-size: cover;
+}
