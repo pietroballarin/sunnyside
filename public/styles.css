@@ -1,39 +1,103 @@
 body {
     max-width: 1920px;
+    font-size: 16px;
 }
 
 h1 {
     text-align: center;
+    color: #fff;
+    font-size: 3em;
+    padding-top: 100px;
+    font-family: 'Fraunces', serif;
 }
 
 header {
     min-width: 220px;
     width: 1440px;
-    height: 1080px;
+    height: 70vh;
     object-fit: cover;
     background-image:url("../images/image-header.jpg");
     background-position: center;
     background-size: cover;
 }
 
+header > nav {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+    margin: auto 10px auto 10px;
+    padding-top: 20px;
+    padding-left: 30px;
+}
+
+header > nav > ul {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: nowrap;
+	justify-content: space-between;
+	align-items: center;
+}
+
+header > nav > ul > li {
+    margin-right: 35px;
+    list-style: none;
+}
+
+header > nav > ul > li > a { 
+    text-decoration: none;
+    color: #fff;
+    font-family: 'Barlow', sans-serif; 
+}
+
+.contact-btn {
+    color: black;
+    background-color: #fff;
+    border-radius: 20px;
+    padding: 10px 25px 10px 25px;
+    font-family: 'Fraunces', serif;
+    font-weight: 100;
+}
+
 #qualities {
     display: grid;
     width: 1440px;
     grid-template-columns: auto auto;
-    height: auto;
-    row-gap: 0;
+    grid-template-rows: 600px 600px 600px;
+    height: 600px;
+    grid-gap: 0;
+    margin: 0;
+    padding: 0;
 }
 
 .box { 
-    width: auto;
-    height: 1000px;
-    background-repeat: no-repeat;
+    width: 720px;
+    height: 600px;
+    /* background-repeat: no-repeat; */
+    grid-gap: 0;
+}
+
+.box:nth-child(1) {
+
 }
 
 .box:nth-child(2) {
-    background-image:url("../images/image-transform.jpg");
+    background-image: url("../images/image-transform.jpg");
 }
 
 .box:nth-child(3) {
-    background-image:url("../images/image-stand-out.jpg");
+    background-image: url("../images/image-stand-out.jpg");
+}
+
+.box:nth-child(4) {
+
+}
+
+.box:nth-child(5) {
+    background-image: url("../images/image-graphic-design.jpg");
+}
+
+.box:nth-child(6) {
+    background-image: url("../images/image-photography.jpg");
 }
