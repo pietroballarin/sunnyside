@@ -8,9 +8,32 @@ h1 {
 
 header {
     min-width: 220px;
-    max-width: 1920px;
+    width: 1440px;
     height: 1080px;
+    object-fit: cover;
     background-image:url("../images/image-header.jpg");
     background-position: center;
     background-size: cover;
+}
+
+#qualities {
+    display: grid;
+    width: 1440px;
+    grid-template-columns: auto auto;
+    height: auto;
+    row-gap: 0;
+}
+
+.box { 
+    width: auto;
+    height: 1000px;
+    background-repeat: no-repeat;
+}
+
+.box:nth-child(2) {
+    background-image:url("../images/image-transform.jpg");
+}
+
+.box:nth-child(3) {
+    background-image:url("../images/image-stand-out.jpg");
 }
