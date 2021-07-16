@@ -1,6 +1,12 @@
+:root {
+    --font1: 'Fraunces', serif;
+}
+
 body {
     max-width: 1920px;
     font-size: 16px;
+    margin-right: 25vh;
+    margin-left: 25vh;
 }
 
 h1 {
@@ -8,7 +14,7 @@ h1 {
     color: #fff;
     font-size: 3em;
     padding-top: 100px;
-    font-family: 'Fraunces', serif;
+    font-family: var(--font1);
 }
 
 header {
@@ -78,8 +84,29 @@ header > nav > ul > li > a {
     grid-gap: 0;
 }
 
-.box:nth-child(1) {
+.box > div {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+	align-items: flex-start;
+    margin: 150px 150px 100px 150px;
+}
 
+.info-box > h2 {
+    font-family: 'Fraunces', serif;
+    font-size: 2em;
+}
+
+.info-box > p {
+    font-family: 'Barlow', sans-serif; 
+    font-weight: bold;
+    line-height: 1.8;
+}
+
+.info-box > a {
+    font-family: 'Fraunces', serif;
+    font-size: 1em;
+    margin-top: 20px;
 }
 
 .box:nth-child(2) {
@@ -90,14 +117,28 @@ header > nav > ul > li > a {
     background-image: url("../images/image-stand-out.jpg");
 }
 
-.box:nth-child(4) {
-
-}
-
 .box:nth-child(5) {
     background-image: url("../images/image-graphic-design.jpg");
 }
 
 .box:nth-child(6) {
     background-image: url("../images/image-photography.jpg");
+}
+
+.text-box {
+    padding-top: 230px;
+}
+
+.text-box > h3 {
+    text-align: end;
+    font-family: 'Fraunces', serif;
+    font-size: 1.5em;
+}
+
+.text-box > p {
+    text-align: center;
+    font-family: 'Barlow', sans-serif; 
+    margin: 2vh 6vh auto 6vh;
+    font-weight: bold;
+    font-size: 0.9em;
 }
