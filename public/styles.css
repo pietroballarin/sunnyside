@@ -1,12 +1,14 @@
 :root {
     --font1: 'Fraunces', serif;
+
 }
 
 body {
-    max-width: 1920px;
+    max-width: 1440px;
     font-size: 16px;
     margin-right: 25vh;
     margin-left: 25vh;
+    height: auto;
 }
 
 h1 {
@@ -71,7 +73,7 @@ header > nav > ul > li > a {
     width: 1440px;
     grid-template-columns: auto auto;
     grid-template-rows: 600px 600px 600px;
-    height: 600px;
+    height: auto;
     grid-gap: 0;
     margin: 0;
     padding: 0;
@@ -84,7 +86,7 @@ header > nav > ul > li > a {
     grid-gap: 0;
 }
 
-.box > div {
+.info-box {
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -126,13 +128,15 @@ header > nav > ul > li > a {
 }
 
 .text-box {
-    padding-top: 230px;
+    padding: 400px 20% 0 20%;
+    text-align: center;
 }
 
 .text-box > h3 {
-    text-align: end;
+    text-align: center;
     font-family: 'Fraunces', serif;
     font-size: 1.5em;
+    color: hsl(212, 27%, 19%)
 }
 
 .text-box > p {
@@ -141,4 +145,40 @@ header > nav > ul > li > a {
     margin: 2vh 6vh auto 6vh;
     font-weight: bold;
     font-size: 0.9em;
+    color: hsl(213, 9%, 39%);
 }
+
+#testimonials {
+    width: 1440px;
+}
+
+#testimonials > h3 {
+    color: hsl(213, 9%, 39%);
+    font-size: 0.7em;
+    text-align: center
+}
+
+.testimonials-container {
+    display: grid;
+    grid-template-columns: auto auto auto; 
+}
+
+.testimonial-box {
+    display: flex;
+	flex-direction: column;
+	flex-wrap: nowrap;
+	justify-content: space-around;
+	align-items: center;
+    margin: 40px 25px 40px 25px;
+}
+
+.testimonial-box > img {
+    width: 60px;
+    border-radius: 50px;
+}
+
+.testimonial-box > p {
+    text-align: center;
+}
+
+
