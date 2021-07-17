@@ -136,7 +136,7 @@ header > nav > ul > li > a {
     text-align: center;
     font-family: 'Fraunces', serif;
     font-size: 1.5em;
-    color: hsl(212, 27%, 19%)
+    color: hsl(198, 62%, 26%)
 }
 
 .text-box > p {
@@ -153,14 +153,17 @@ header > nav > ul > li > a {
 }
 
 #testimonials > h3 {
+    font-family: 'Fraunces', serif;
     color: hsl(213, 9%, 39%);
-    font-size: 0.7em;
-    text-align: center
+    font-size: 1em;
+    text-align: center;
+    padding-top: 90px;
 }
 
 .testimonials-container {
     display: grid;
     grid-template-columns: auto auto auto; 
+    padding: 30px 7% 100px 7%;
 }
 
 .testimonial-box {
@@ -174,11 +177,43 @@ header > nav > ul > li > a {
 
 .testimonial-box > img {
     width: 60px;
-    border-radius: 50px;
+    margin-bottom: 30px;
+    border-radius: 50px; 
 }
 
 .testimonial-box > p {
     text-align: center;
+    font-family: 'Barlow', sans-serif;
+    font-weight: bolder;
 }
+
+.testimonial-description {
+    padding-bottom: 40px;
+    line-height: 1.8;
+}
+
+.testimonial-box > p > span {
+    font-family: 'Fraunces', serif;
+    margin-bottom: 0;
+    padding-bottom: 0;
+}
+
+.occupation {
+    margin-top: 0;
+    padding-top: 0;
+    font-size: 0.8em;
+}
+
+#gallery {
+    width: 1440px;
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    height: auto; 
+}
+
+#gallery > img {
+    width: 360px;
+}
+
 
 
