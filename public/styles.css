@@ -215,5 +215,46 @@ header > nav > ul > li > a {
     width: 360px;
 }
 
+#footer {
+    width: 1440px;
+    display: flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+    background-color: #8FD4C5;
+    ;
+}
 
+#footer > img {
+    padding-top: 60px;
+    padding-bottom: 20px;
+}
 
+.footer-links {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+    font-size: 0.9em;
+    font-family: 'Barlow', sans-serif;
+    color: #2D7365;
+}
+
+.footer-links > h4 {
+    padding: 0 25px 0 25px;
+}
+
+.footer-icons {
+    display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	justify-content: space-around;
+	align-items: center;
+}
+
+.footer-icons > img {
+    padding: 50px 10px 40px 10px;
+    width: 15px
+}
