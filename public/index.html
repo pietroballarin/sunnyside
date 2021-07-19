@@ -1,40 +1,44 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   
   <title>Sunnyside</title>
+
   <link href="styles.css" rel="stylesheet" type="text/css" media="screen"/>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&family=Fraunces:wght@800&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@800&display=swap" rel="stylesheet">  
 </head>
+
 <body>
     <header>
       <nav>
         <img src="../images/logo.svg" />
-        <ul>
-          <li>
+        <img src="../images/icon-hamburger.svg" class="hamburger">
+        <ul class="menu-nav">
+          <li class="nav-item">
             <a href="#">About</a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#">Services</a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#">Projects</a>
           </li>
-          <li>
+          <li class="nav-item">
             <a href="#" class="contact-btn">Contact</a>
           </li>
         </ul>
       </nav>
       <h1>WE ARE CREATIVES</h1>
-      <img src="../images/icon-arrow-down.svg"/>
+      <!-- <img src="../images/icon-arrow-down.svg"/> -->
     </header>
+
+    
   
     <section id="qualities">
       <div class="box">
@@ -119,5 +123,27 @@
         <img src="../images/icon-pinterest.svg" />
       </div>
     </footer>
+
+    <script>
+
+      const menuNav = document.querySelector(".menu-nav");
+
+      const hamburgerBtn = document.querySelector(".hamburger");
+
+      hamburgerBtn.addEventListener("click", toggleMenu);
+
+      let showMenu = false;
+
+      function toggleMenu() {
+        if (!showMenu) {
+          menuNav.classList.add("show");
+          showMenu = true;
+        } else {
+          menuNav.classList.remove("show");
+          showMenu = false;
+        };
+      }; 
+    
+    </script>
 </body>
 </html>
